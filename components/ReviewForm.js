@@ -25,7 +25,7 @@ app.component('review-form', {
     },
     methods: {
       onSubmit() {
-        if (this.name === '' || this.review === '' || this.rating === null || this.recommend === null) {
+        if (this.name === '' || this.review === '' || this.rating === null) {
           alert('Review is incomplete. Please fill out every field.')
           return
         }
